@@ -1,43 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Dashboard Centralizado</title>
+  <title>Servix-BI2 Dashboard</title>
   <style>
-    html, body {
-      margin: 0;
-      padding: 0;
+    body {
       background-color: #0B2C49;
-      height: 100vh;
-      width: 100vw;
       display: flex;
       justify-content: center;
       align-items: center;
-      overflow: hidden;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
     }
-
-    .iframe-wrapper {
-      width: 100vw;
-      height: 85vh; /* Aumentei um pouco a área visível */
-      position: relative;
-      overflow: hidden;
+    a.button {
+      background-color: #0057B8;
+      color: white;
+      padding: 20px 40px;
+      text-decoration: none;
+      font-size: 24px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      transition: background-color 0.3s ease;
     }
-
-    iframe {
-      position: absolute;
-      top: -5vh; /* Reduzi o corte superior */
-      left: 0;
-      width: 100%;
-      height: 110vh; /* Reduzi a ampliação */
-      border: none;
+    a.button:hover {
+      background-color: #003f7d;
     }
   </style>
 </head>
 <body>
-  <div class="iframe-wrapper">
-    <iframe 
-      src="https://app.powerbi.com/view?r=eyJrIjoiODYxZjhlNjQtMWRkYS00MWY4LTk4ZmUtMzU2NzA3YWI1ZmMwIiwidCI6IjUyMTE1YjBhLTk1YTktNDFlYy05ZjA5LWM5NTk3ZTY4NjgyYSJ9&navContentPaneEnabled=false&filterPaneEnabled=false" 
-      allowfullscreen>
-    </iframe>
-  </div>
+  <a 
+    class="button" 
+    href="https://app.powerbi.com/view?r=eyJrIjoiODYxZjhlNjQtMWRkYS00MWY4LTk4ZmUtMzU2NzA3YWI1ZmMwIiwidCI6IjUyMTE1YjBhLTk1YTktNDFlYy05ZjA5LWM5NTk3ZTY4NjgyYSJ9&navContentPaneEnabled=false&filterPaneEnabled=false&chromeless=1" 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+    Abrir Dashboard Power BI em Tela Cheia
+  </a>
 </body>
 </html>
+
