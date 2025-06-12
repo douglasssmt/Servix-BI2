@@ -1,3 +1,43 @@
-<a href="https://app.powerbi.com/view?r=eyJrIjoiODYxZjhlNjQtMWRkYS00MWY4LTk4ZmUtMzU2NzA3YWI1ZmMwIiwidCI6IjUyMTE1YjBhLTk1YTktNDFlYy05ZjA5LWM5NTk3ZTY4NjgyYSJ9&navContentPaneEnabled=false&filterPaneEnabled=false" target="_blank">
-  Abrir Dashboard Power BI
-</a>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard Centralizado</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background-color: #0B2C49;
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .iframe-wrapper {
+      width: 100vw;
+      height: 85vh; /* Aumentei um pouco a área visível */
+      position: relative;
+      overflow: hidden;
+    }
+
+    iframe {
+      position: absolute;
+      top: -5vh; /* Reduzi o corte superior */
+      left: 0;
+      width: 100%;
+      height: 110vh; /* Reduzi a ampliação */
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="iframe-wrapper">
+    <iframe 
+      src="https://app.powerbi.com/view?r=eyJrIjoiODYxZjhlNjQtMWRkYS00MWY4LTk4ZmUtMzU2NzA3YWI1ZmMwIiwidCI6IjUyMTE1YjBhLTk1YTktNDFlYy05ZjA5LWM5NTk3ZTY4NjgyYSJ9&navContentPaneEnabled=false&filterPaneEnabled=false" 
+      allowfullscreen>
+    </iframe>
+  </div>
+</body>
+</html>
